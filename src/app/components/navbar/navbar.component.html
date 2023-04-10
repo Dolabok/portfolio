@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="navbar__container">
+    <a class="navbar__logo" href="/">Quentin Ansard</a>
+
+    <ul class="navbar__menu">
+      <li class="navbar__menu-item" *ngFor="let item of menuItems">
+        <a class="navbar__menu-link" [routerLink]="item.path" (click)="redirectTo(item.path)">{{ item.title }}</a>
+      </li>
+    </ul>
+
+    <button class="navbar__toggle" (click)="toggleMobileMenu()">
+      <span class="navbar__toggle-icon"></span>
+    </button>
+
+    <ul class="navbar__mobile-menu" *ngIf="isMobileMenuOpen">
+      <li class="navbar__mobile-menu-item" *ngFor="let item of menuItems">
+        <a class="navbar__mobile-menu-link" [routerLink]="item.path">{{ item.title }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

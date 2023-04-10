@@ -1,0 +1,32 @@
+<div class="skills-container">
+  <h2>Compétences</h2>
+  <div class="skills-section">
+    <br>
+    <h3>Compétences Techniques</h3>
+    <div class="skills-grid technical-skills">
+      <a *ngFor="let skill of technicalSkills" [routerLink]="['/skills', skill.id]" (click)="navigate(skill.id)" class="skill-card">
+        <div class="skill-icon">{{ skill.icon }}</div>
+        <div class="skill-title">{{ skill.title }}</div>
+        <div class="skill-description">{{ skill.description }}</div>
+      </a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="skills-section">
+    <h3>Compétences Humaines</h3>
+    <div class="skills-grid human-skills">
+      <a *ngFor="let skill of humanSkills" [routerLink]="['/skills', skill.id]" (click)="navigate(skill.id)" class="skill-card">
+        <div class="skill-icon">{{ skill.icon }}</div>
+        <div class="skill-title">{{ skill.title }}</div>
+        <div class="skill-description">{{ skill.description }}</div>
+      </a>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>

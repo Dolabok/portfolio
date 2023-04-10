@@ -1,0 +1,19 @@
+<div class="project-container">
+  <h2>Mes réalisations</h2>
+  <div class="project-section">
+    <br>
+    <div class="project-grid">
+      <a *ngFor="let projet of projects" [routerLink]="['/projects', projet.id]" (click)="navigate(projet.id)" class="project-card">
+        <div class="project-icon">{{ projet.icon }}</div>
+        <div class="project-title">{{ projet.title }}</div>
+        <div class="project-description">{{ projet.description }}</div>
+      </a>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+

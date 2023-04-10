@@ -1,0 +1,83 @@
+<br>
+<body>
+<h1>Déploiement automatisé de edge server</h1>
+<br>
+<h2>Présentation</h2>
+<p>
+  Le projet "Suivi à distance d'un parc de serveurs" concerne la mise en place d'un système de surveillance et de gestion à distance pour les serveurs de l'entreprise Altaroad. Cette solution a été conçue pour aider l'équipe de monitoring à suivre en temps réel la performance, la disponibilité et l'utilisation des serveurs, en vue d'assurer un service de qualité pour les clients. Pour ce faire, nous avons utilisé une combinaison d'outils et de technologies, tels que Grafana, InfluxDB, Prometheus et Ansible, afin de collecter, stocker, analyser et présenter les données relatives à l'état et à la performance de notre parc de serveurs.<br>
+  Le système de surveillance permet de suivre environ 150 indicateurs clés de performance (KPI) répartis en plusieurs catégories, comme les besoins clients, la réactivité et la performance des serveurs, ainsi que la qualité du service fourni. L'objectif étant de fournir à l'équipe de monitoring un tableau de bord clair et complet pour faciliter la détection des problèmes potentiels et la prise de décisions éclairées.
+</p>
+<br>
+<h2>Objectif</h2>
+<p>
+  Le but principal de ce projet était d'assurer un suivi efficace et en temps réel de notre parc de serveurs et d'en garantir la disponibilité et la performance pour nos clients. Les enjeux incluaient la satisfaction client, l'optimisation des ressources et l'anticipation des problèmes potentiels avant qu'ils n'affectent le service fourni. Les risques liés à ce projet concernaient principalement la dégradation de la qualité de service, les temps d'arrêt inattendus et les problèmes techniques non détectés en temps opportun.
+  Pour atteindre ces objectifs, nous avons mis en place une solution de surveillance basée sur plusieurs outils et technologies, notamment Grafana, InfluxDB, Prometheus et Ansible. Notre objectif était de centraliser les données de performance, d'identifier les tendances et les problèmes éventuels, et de fournir une vue d'ensemble claire et accessible pour l'équipe de monitoring. En conséquence, nous avons amélioré notre capacité à détecter et résoudre rapidement les incidents, garantissant ainsi la satisfaction et la confiance de nos clients.
+</p>
+<br>
+<h2>Étapes</h2>
+<h3>Lister tous les besoins en supervision</h3>
+<p>
+  J'ai commencé par identifier les indicateurs clés de performance pertinents pour le suivi du parc informatique et la satisfaction des clients. Cette liste couvre un large éventail de domaines, allant de la disponibilité des serveurs et des applications aux performances et à l'utilisation des ressources.
+</p>
+<h3>Acquérir et collecter les données</h3>
+<p>
+  Une fois les KPI identifiés, j'ai mis en place un système pour acquérir et collecter les données nécessaires à leur suivi. J'ai utilisé Prometheus pour collecter les métriques à partir des serveurs et des applications, puis stocké ces données dans InfluxDB, une base de données optimisée pour la gestion des séries temporelles.
+</p>
+<h3>Créer un tableau de bord Grafana</h3>
+<p>
+  Avec toutes les données collectées et stockées, j'ai conçu un tableau de bord Grafana pour visualiser et présenter les KPI de manière claire et compréhensible. Le tableau de bord offre une vue d'ensemble des performances du parc informatique, ainsi que des détails sur des éléments spécifiques, tels que l'utilisation des ressources et les alertes. Les membres de l'équipe de surveillance peuvent utiliser ce tableau de bord pour identifier rapidement les problèmes et agir en conséquence.
+</p>
+<br>
+<h2>Acteurs</h2>
+<p>
+  Moi-même et l'équipe de monitoring basée à Tunis.
+</p>
+<br>
+<h2>Résultats</h2>
+<p>
+  Grâce à la mise en place du tableau de bord Grafana, l'équipe de monitoring a gagné énormément de temps dans la supervision du parc informatique. Les problèmes sont identifiés plus rapidement et les clients bénéficient d'une meilleure qualité de service.
+</p>
+<img src="assets/img/boomtable.png" style="max-width: 100%;">
+<p style="text-align: center; text-decoration: underline;">
+  Un visuel du tableau de bord :
+</p>
+<p>
+  De gauche à droite, les données présentés par le premier tableau :<br>
+  - Le nom du server<br>
+  - Le débit internet moyen de leur connexion 4G (en Byte/Secondes)<br>
+  - Le débit internet moyen montant de leur connexion 4G (en Byte/Secondes)<br>
+  - Le débit internet moyen descendant de leur connexion 4G (en Byte/Secondes)<br>
+  - Le débit internet moyen montant maximum de leur connexion 4G (en Byte/Secondes) : utile pour savoir si le serveur se trouve dans une région avec un faible débit internet)<br>
+  - La consommation de réseau 4G des 30 derniers jours : pour estimer si le forfait risque  d’être dépassé<br>
+  - La consommation de réseau 4G de la dernière heure<br>
+  - La consommation de réseau 4G des 24 dernières heures<br>
+  - La latence moyenne : le temps nécessaire pour communiquer avec le serveur<br>
+  - Un indicateur permettant de savoir si le serveur est allumé ou non ou alors sur batterie<br>
+  - L’utilisation de la mémoire vive<br>
+  - Le temps de fonctionnement depuis le dernier redémarrage<br>
+  <br>
+  Ps: les données de l'image ont été changées pour ne rien divulguer de l'entreprise.
+</p>
+<br>
+<h2>Avenir</h2>
+<p>
+  L'objectif est de continuer à améliorer le système de surveillance à distance, en ajoutant de nouveaux KPI et en affinant les processus de collecte et d'analyse des données, pour garantir une performance optimale du parc informatique et une satisfaction maximale des clients.
+</p>
+<br>
+<h2>Critique</h2>
+<p>
+  Ce projet m'a permis d'acquérir une compréhension approfondie des différentes technologies et outils de surveillance utilisés pour assurer la performance et la disponibilité des services informatiques. J'ai également appris l'importance de présenter les données de manière claire et compréhensible pour faciliter la prise de décision et la résolution des problèmes.<br>
+  Cependant, je reconnais qu'il existe toujours des opportunités d'amélioration et que la surveillance d'un parc informatique est un processus continu. À l'avenir, je souhaite explorer d'autres solutions et technologies pour améliorer encore la qualité du suivi et la satisfaction des clients.
+</p>
+<br>
+<h2>Compétences</h2>
+<p>
+  Ce projet m'a permis de développer plusieurs compétences techniques et non techniques. <br>
+  Parmi les compétences techniques, j'ai notamment acquis une expertise dans l'utilisation de Grafana, InfluxDB, Prometheus et Ansible pour la collecte, le stockage et la visualisation des données. J'ai également renforcé mes compétences en analyse des performances, en gestion des incidents et en optimisation des ressources.<br>
+  Sur le plan des compétences non techniques, j'ai amélioré ma capacité à travailler en équipe et à communiquer efficacement avec les membres de l'équipe de monitoring basée à Tunis. J'ai également développé ma capacité à identifier les besoins des clients et à proposer des solutions adaptées pour répondre à leurs attentes. <br>
+  Enfin, j'ai affiné mon sens de l'organisation et de la gestion des priorités pour assurer un suivi efficace et une résolution rapide des problèmes rencontrés.
+</p>
+</body>
+<br>
+<br>
+<br>
