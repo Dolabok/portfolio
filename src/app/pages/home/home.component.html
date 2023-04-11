@@ -16,19 +16,19 @@
     <div id="centered line" class="section-title-underline"></div>
   </div>
   <div id="presentation-layout">
-      <article><img class="" src="../../../assets/img/space-engineer.png" alt="Profil">
+      <article><img class="" src="assets/img/space-engineer.png" alt="Profil">
         <p style="margin-top:10px">Personnalité : <i class="fas fa-chess"></i><a href="https://www.16personalities.com/fr/la-personnalite-intj"> INTJ-A</a></p>
       </article>
       <article>
         <h3>Quentin Ansard, 23 ans</h3>
         <br>
-        <p class="text-justify">Bonjour, je me présente: je m'appelle Quentin Ansard et je suis developpeur Full Stack chez <a href="https://www.altaroad.com/">Altaroad</a> dans le cadre de mon master informatique à l'école <a href="https://www.intechinfo.fr/">In'tech</a> et futur diplômé d'un titre d'Expert dans ce domaine (BAC +5).</p>
-        <p class="text-justify">Je passe beaucoup de temps sur mes projets, le plus connu en france doit être le projet Meet in City consistant en la création d'une plateforme permettant aux personnes de se rencontrer de manière plus humaine que ce soit pour nouer des amitiés ou bien pour des relations amoureuses.</p>
+        <p class="text-justify">Je suis developpeur Full Stack chez <a href="https://www.altaroad.com/">Altaroad</a> dans le cadre de mon master informatique à l'école <a href="https://www.intechinfo.fr/">In'tech</a> et futur diplômé d'un titre d'Expert dans ce domaine (BAC +5).</p>
+        <p class="text-justify">Je passe beaucoup de temps sur mes projets, le plus connu en France doit être le projet Meet in City consistant en la création d'une plateforme permettant aux personnes de se rencontrer de manière plus humaine que ce soit pour nouer des amitiés ou bien pour des relations amoureuses.</p>
         <p class="text-justify">Hormis le développement, il y a bien d'autres activités qui m'intéresse énormément et qui sont pour moi des éléments essentiels dans le cadre professionnel comme par exemple :</p>
         <ul class="text-justify">
-          <li>La gestion de projet</li>
-          <li>La prise de décision</li>
-          <li>L'analyse des besoins</li>
+          <li>- La gestion de projet</li>
+          <li>- La prise de décision</li>
+          <li>- L'analyse des besoins</li>
         </ul>
         <p class="text-justify">Si jamais vous avez besoin de mon aide pour vos projets, n'hésitez pas à me contacter !</p>
       </article>
@@ -75,7 +75,7 @@
     <li class="diplome-card">
       <div>
         <div class="container-diplome">
-          <img class="img-diplome img-responsive" src="../../../assets/img/bia.jpg" alt="" />
+          <img class="img-diplome img-responsive" src="assets/img/bia.jpg" alt="" />
           <div class="overlay"></div>
         </div>
         <div class="diplome-text">
@@ -88,7 +88,7 @@
     <li class="diplome-card">
       <div>
         <div class="container-diplome">
-          <img class="img-diplome img-responsive" src="../../../assets/img/bac.jpg" alt="Diplome du Baccalauréat" />
+          <img class="img-diplome img-responsive" src="assets/img/bac.jpg" alt="Diplome du Baccalauréat" />
           <div class="overlay"></div>
         </div>
         <div class="diplome-text">
@@ -101,7 +101,7 @@
     <li class="diplome-card">
       <div>
         <div class="container-diplome">
-          <img class="img-diplome img-responsive" src="../../../assets/img/intech.jpg" alt="" />
+          <img class="img-diplome img-responsive" src="assets/img/intech.jpg" alt="" />
           <div class="overlay"></div>
         </div>
         <div class="diplome-text">
@@ -111,13 +111,12 @@
       </div>
     </li>
   </ul>
-  <button class="btn-diplomes">En savoir plus</button>
   <div class="DiagonalSeparator-diplome-end"></div>
 </section>
 
 <section class="timeline-section">
   <div class="DiagonalSeparator-cv"></div>
-  <h2 class="section-title text-white">CV</h2>
+  <h2 class="section-title text-white">Mon Parcours</h2>
   <div id="centered line" class="section-title-underline"></div>
 
   <div id="cd-timeline" class="cd-container">
@@ -126,10 +125,10 @@
       <div class="cd-timeline-img cd-location"> </div>
       <div class="cd-timeline-content">
         <h2>Entrée à Altaroad</h2>
-        <p style="text-align: justify;"><img class="img-responsive cv-bloc-image" src="../../../assets/img/projects/altaroad.jpg">
+        <p style="text-align: justify;"><img class="img-responsive cv-bloc-image" src="assets/img/projects/altaroad.jpg">
           Altaroad est une start-up deep tech innovante française qui s'est lancée dans une mission de rendre le secteur de la construction et du BTP plus durable.</p>
-        <p>Altaroad allie l'augmentation de la sécurité routière en évitant les situations à risque et la diminution de l'impact environnemental des chantiers via la tracabilité des matériaux transportés à la performance économique de ses clients grâce à l'optimisation des flux.</p>
-        <a href="/project/startintech">Voir la page du projet</a>
+        <p>Altaroad allie l'augmentation de la sécurité routière à la performance économique de ses clients en évitant les situations à risque et la diminution de l'impact environnemental des chantiers via la traçabilité des matériaux transportés et l'optimisation des flux.</p>
+        <a [routerLink]="['/timeline', 'altaroad']" (click)="navigate('altaroad')">Lire plus</a>
         <span class="cd-date"><strong>Février 2021</strong></span>
       </div>
     </div>
@@ -138,9 +137,9 @@
       <div class="cd-timeline-img cd-picture"></div>
       <div class="cd-timeline-content">
         <h2>Co-fondateur de Meet in city</h2>
-        <p style="text-align: justify;"><img class="img-responsive cv-bloc-image" src="../../../assets/img/projects/meetincity_01.png">
-          Meet in City est une plateforme qui vous permet de rencontrer des personnes que ce soit dans un but amical ou en amour. Le concept ? «Pas de «tchat» ! Si les profils correspondent, un rendez-vous est proposé aux deux utilisateurs dans un lieu convivial. </p>
-        <a href="/project/meetincity">Voir la page du projet</a>
+        <p style="text-align: justify;"><img class="img-responsive cv-bloc-image" src="assets/img/projects/meetincity_01.png">
+          Meet in City est une plateforme qui vous permet de rencontrer des personnes que ce soit dans un but amical ou amoureux. Le concept ? «Pas de «tchat» ! Si les profils correspondent, un rendez-vous est proposé aux deux utilisateurs dans un lieu convivial. </p>
+        <a [routerLink]="['/timeline', 'meet-in-city']" (click)="navigate('meet-in-city')">Lire plus</a>
         <span class="cd-date"><strong>Novembre 2019</strong></span>
       </div>
     </div>
@@ -149,8 +148,8 @@
       <div class="cd-timeline-img cd-location"></div>
       <div class="cd-timeline-content">
         <h2>Début de mon master à In'tech</h2>
-        <p style="text-align: justify;"><img id="cv-bloc-image-intech" class="img-responsive cv-bloc-image" src="../../../assets/img/logo-intech.png">
-          IN’TECH est une École Supérieure d’Ingénierie Informatique, elle délivre en 5 ans un titre d’Expert en Ingénierie du Logiciel et un titre d’Expert en Systèmes et Réseaux, la grande force d'In'tech est sa pédagogie par projet avec de vrai acteur du monde professionel. Chaque semestre, les étudiants ont un projet informatique et un projet de formation humaine à réaliser, ces derniers nous permettent de renforcer nos compétences rélationels et communicatives</p>
+        <p style="text-align: justify;"><img id="cv-bloc-image-intech" class="img-responsive cv-bloc-image" src="assets/img/logo-intech.png">
+          IN’TECH est une École Supérieure d’Ingénierie Informatique, elle délivre en 5 ans un titre d’Expert en Ingénierie du Logiciel et un titre d’Expert en Systèmes et Réseaux. La grande force d'In'tech est sa pédagogie par projet avec de vrai acteur du monde professionel. Chaque semestre, les étudiants ont un projet informatique et un projet de formation humaine à réaliser, ces derniers nous permettent de renforcer nos compétences rélationels et communicatives</p>
         <span class="cd-date"><strong>Septembre 2018</strong></span>
       </div>
     </div>
@@ -160,6 +159,7 @@
       <i class="fas fa-chevron-circle-right">  Voir la timeline complète</i>
     </button>
   </div>
+  <br>
 </section>
 
 <section class="competences">

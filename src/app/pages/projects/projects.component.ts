@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {NavigationEnd, Router} from "@angular/router";
 
 interface Project {
   id: string;
@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       id: 'edge-server',
-      title: 'Deploiement automatisé de edge server',
+      title: 'Déploiement automatisé de edge server',
       description: 'Du montage à l\'installation sur chantier le plus rapidement possible',
       icon: '🚀',
     },
@@ -52,7 +52,14 @@ export class ProjectsComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
+  }
 
   navigate(event: string) {
     this.router.navigate(['projects/', event])

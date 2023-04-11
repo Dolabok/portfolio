@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 
   scrollToSection() {
@@ -20,5 +29,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-
+  navigate(event: string) {
+    this.router.navigate(['timeline/', event])
+  }
 }
