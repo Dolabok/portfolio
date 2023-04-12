@@ -1,10 +1,18 @@
 <nav class="navbar">
   <div class="navbar__container">
-    <a class="navbar__logo" (click)="redirectTo('')" style="cursor: pointer">Quentin Ansard</a>
+    <a class="navbar__logo" (click)="redirectTo('')" style="cursor: pointer">Portfolio</a>
 
     <ul class="navbar__menu">
       <li class="navbar__menu-item" *ngFor="let item of menuItems">
-        <a class="navbar__menu-link" [routerLink]="item.path" (click)="redirectTo(item.path)">{{ item.title }}</a>
+        <a class="navbar__menu-link" *ngIf="!item.subMenu" [routerLink]="item.path" (click)="redirectTo(item.path)">{{ item.title }}</a>
+        <div *ngIf="item.subMenu" class="navbar__submenu-container">
+          <a class="navbar__menu-link" [routerLink]="item.path" (click)="redirectTo(item.path)">{{ item.title }}</a>
+          <ul class="navbar__submenu">
+            <li *ngFor="let subItem of item.subMenu">
+              <a [routerLink]="subItem.path" (click)="redirectTo(subItem.path)">{{ subItem.title }}</a>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
 
@@ -14,7 +22,15 @@
 
     <ul class="navbar__mobile-menu" *ngIf="isMobileMenuOpen">
       <li class="navbar__mobile-menu-item" *ngFor="let item of menuItems">
-        <a class="navbar__mobile-menu-link" [routerLink]="item.path">{{ item.title }}</a>
+        <a *ngIf="!item.subMenu" class="navbar__mobile-menu-link" [routerLink]="item.path">{{ item.title }}</a>
+        <div *ngIf="item.subMenu" class="navbar__mobile-submenu-container">
+          <span>{{ item.title }}</span>
+          <ul class="navbar__mobile-submenu">
+            <li *ngFor="let subItem of item.subMenu">
+              <a [routerLink]="subItem.path" (click)="redirectTo(subItem.path)">{{ subItem.title }}</a>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </div>
