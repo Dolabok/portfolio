@@ -2,55 +2,40 @@
 <body>
 <h1>Génération de musique par IA</h1>
 <br>
-<h2>Présentation</h2>
 <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;La Génération de musique par IA est un projet personnel visant à créer de la musique de haute qualité en utilisant des modèles de machine learning. Ce projet a permis d'expérimenter diverses architectures et d'acquérir une multitude de connaissances dans le domaine. <br>
-  Malgré l'existence de quelques modèles professionnels pour la génération de musique, les modèles actuels, tels que Jukebox d'OpenAI (2018), ceux de Microsoft et Google, offrent des résultats limités. Le modèle le plus performant à ce jour est AIVA, développé par l'entreprise du même nom et commercialisant l'accès à son utilisation.<br>
-  Contrairement à ce que l'on peut penser, la génération musicale est bien plus compliquée que la génération d'images, car si on peut tromper le cerveau avec une image imparfaite, la moindre fausse note ou un manque d'harmonie s'entendra tout de suite à l'oreille.<br>
+  La <strong>génération de musique par IA</strong> est un projet personnel passionnant que j'ai entrepris dans le but de créer de la musique de haute qualité en utilisant des modèles de machine learning. Ce projet a offert l'occasion d'expérimenter diverses architectures de modèles et d'acquérir une multitude de connaissances dans le domaine de l'IA musicale.
 </p>
-<br>
-<h2>Objectif</h2>
+<img src="assets/img/musicai1.png" alt="Future of the project" style="max-height: 50vh; max-width: 80vw;"/>
 <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;L'objectif de ce projet est d'explorer et de créer des modèles de machine learning capables de générer de la musique de qualité supérieure, rivalisant avec les modèles professionnels existants et dépassant leurs limitations dans la limite de mon matériel.
+  Si des modèles professionnels pour la génération de musique existent déjà, tels que Jukebox d'OpenAI, ainsi que les offres de Microsoft et Google, les résultats restent limités. Le modèle le plus performant actuellement est AIVA, développé par l'entreprise du même nom. Cependant, la génération musicale s'avère bien plus complexe que la génération d'images. Alors qu'une image imparfaite peut parfois tromper le cerveau, une fausse note ou un manque d'harmonie est immédiatement perceptible à l'oreille.
 </p>
-<br>
-<h2>Étapes</h2>
+
 <p>
-  Début 2021 : Expérimentation avec un Generative Adversarial Network (GAN) et un Variational Autoencoder (VAE). Les GAN utilisent deux réseaux de neurones, l'un pour générer des données et l'autre pour les évaluer, tandis que les VAE apprennent la structure sous-jacente des données pour générer de nouvelles instances. Les résultats obtenus étaient inférieurs ou comparables à ceux de Jukebox.<br><br>
-  Fin 2021 : Exploration d'un Wavenet, une architecture de réseau de neurones convolutifs profonds utilisée pour générer des signaux audio. Bien que les musiques produites soient riches, elles étaient également très bruitées. Des tests ont été réalisés sur un modèle de débruitage pour tenter d'améliorer la qualité sonore.<br><br>
-  Début 2022 : Expérimentation avec un LSTM (Long Short-Term Memory) personnalisé. Les LSTM sont des réseaux de neurones récurrents particulièrement adaptés pour traiter les séquences de données temporelles, comme la musique. Cette approche a abouti à la version 1 du modèle, légèrement meilleure que Jukebox, mais produisant des musiques mono canal rappelant les années 90.<br><br>
-  Été 2022 : Création de la version 1.5, dérivée du LSTM personnalisé et spécialisée dans la production de musique lo-fi. Cette version intègre des techniques de traitement du signal et des caractéristiques spécifiques au genre lo-fi pour améliorer la génération de musique dans ce style.<br><br>
-  Fin 2022 : Mise en place d'une nouvelle architecture pour la version 2 du modèle, combinant des éléments de plusieurs architectures précédemment testées et intégrant de nouvelles techniques pour la gestion de plusieurs instruments, tonalités et rythmes. Malgré ces avancées, la version 2 éprouve des difficultés à produire des mélodies harmonieuses.<br><br>
-  2023 : Tests avec la diffusion stable, une méthode de génération de musique qui prend en compte les relations temporelles entre les notes et les instruments pour créer des séquences musicales plus cohérentes et harmonieuses. Cette approche vise à améliorer la qualité globale des mélodies générées par le modèle.<br><br>
-  Chacune de ces étapes a permis d'explorer différentes architectures de modèles et de techniques de génération de musique, en se concentrant sur les défis spécifiques liés à la qualité sonore, la complexité des mélodies et la gestion des instruments.
+  L'objectif de ce projet est de repousser ces limites en explorant et en créant des modèles de machine learning capables de générer de la musique de qualité supérieure. En rivalisant avec les modèles professionnels existants et en dépassant leurs limitations, ce projet vise à maximiser le potentiel de la génération de musique par IA.
 </p>
-<br>
-<h2>Acteurs</h2>
 <p>
-  Moi-même et ma machine à café.
+  Mon parcours dans ce projet a été marqué par l'expérimentation avec une multitude de techniques et d'architectures. J'ai commencé par tester un <strong>Generative Adversarial Network</strong> (GAN) et un <strong>Variational Autoencoder</strong> (VAE) en 2021, avec des résultats comparables à ceux de Jukebox. Puis, j'ai exploré un <strong>Wavenet</strong>, une architecture de réseau de neurones convolutifs profonds pour générer des signaux audio. Les musiques produites étaient riches, mais également bruitées. Par la suite, j'ai expérimenté avec un <strong>LSTM</strong> (Long Short-Term Memory) personnalisé qui a abouti à la version 1 du modèle, légèrement meilleure que Jukebox, mais produisant des musiques mono canal rappelant les années 90.
 </p>
-<br>
-<h2>Résultats</h2>
 <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;La chaîne YouTube Mt. Scale publie quotidiennement une vidéo basée sur la version 1 du modèle. D'autres chaînes privées similaires ont été créées pour les autres versions, certaines ayant été fermées par YouTube.
+  À l'été 2022, la version 1.5 est née, dérivée du LSTM personnalisé et spécialisée dans la production de musique lo-fi. Cette version a intégré des techniques de traitement du signal et des caractéristiques spécifiques au genre lo-fi pour améliorer la génération de musique dans ce style. Par la suite, j'ai mis en place une nouvelle architecture pour la version 2 du modèle, combinant des éléments de plusieurs architectures précédemment testées et intégrant de nouvelles techniques pour la gestion de plusieurs instruments, tonalités et rythmes.
 </p>
-<br>
-<h2>Avenir</h2>
 <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;Amélioration continue et exploration de nouvelles architectures et techniques pour affiner les modèles de génération de musique par IA. Notament la diffusion stable.
-  J'attends que la musique soit suffisement qualitative
+  En 2023, j'ai commencé à tester la diffusion stable, une méthode de génération de musique qui prend en compte les relations temporelles entre les notes et les instruments pour créer des séquences musicales plus cohérentes et harmonieuses. Chacune de ces étapes a permis d'explorer différentes architectures de modèles et de techniques de génération de musique, en se concentrant sur les défis spécifiques liés à la qualité sonore, la complexité des mélodies et la gestion des instruments.
 </p>
-<br>
-<h2>Critique</h2>
 <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;Ce projet a été un terrain d'apprentissage exceptionnel, permettant de mieux comprendre les défis et les possibilités de la génération de musique par IA. Il a également permis d'explorer diverses architectures et techniques pour améliorer ma capacité de création de modèle efficace.
+  J'ai mené ce projet seul, soutenu par ma fidèle machine à café. La chaîne YouTube <strong>Mt. Scale</strong> publie quotidiennement une vidéo basée sur la version 1 du modèle, et d'autres chaînes similaires ont été créées pour les autres versions.
 </p>
-<br>
-<h2>Compétences</h2>
 <p>
-  - Connaissance approfondie des architectures de machine learning.
-  - Expérience dans l'optimisation et l'amélioration des modèles de génération de musique.
-  - Capacité à résoudre des problèmes complexes dans le domaine de l'IA et de la musique.
+  Je prévois de continuer à améliorer le modèle, et d'explorer de nouvelles architectures et techniques pour affiner la génération de musique par IA. Ce projet a été un formidable terrain d'apprentissage, permettant de mieux comprendre les défis et les possibilités de la génération de musique par IA. Il a également permis d'améliorer mes compétences en matière de création de modèles efficaces et de résolution de problèmes complexes dans le domaine de l'IA et de la musique.
+</p>
+<img src="assets/img/musicai2.png" alt="Future of the project" style="max-height: 50vh; max-width: 80vw;"/>
+<br>
+<br>
+<p>
+  Les principales compétences développées lors de cette réalisation sont :<br><br>
+  - Connaissance approfondie des architectures de machine learning.<br>
+  - Expérience dans l'optimisation et l'amélioration des modèles de génération de musique.<br>
+  - Capacité à résoudre des problèmes complexes dans le domaine de l'IA et de la musique.<br>
 </p>
 <br>
 <h2>Articles liés :</h2>
